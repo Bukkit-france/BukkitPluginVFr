@@ -1,0 +1,5 @@
+required-yes-percentage=33
+minimum-agree-percentage=51
+broadcast-votes=true
+guiLang=french
+debug=false
