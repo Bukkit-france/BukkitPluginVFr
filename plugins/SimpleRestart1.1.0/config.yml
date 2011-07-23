@@ -1,0 +1,20 @@
+---
+# enable / disable auto-restart
+auto-restart: yes
+
+# in hours (decimal points ok -- ex: 2.5)
+# must be > (warn-time / 60)
+# default is every 8 hours
+auto-restart-interval: 2
+
+# warning times before reboot in minutes (decimal points ok -- ex: 2.5)
+warn-times: [10, 5, 2, 1]
+
+# what to tell players when warning about server reboot
+# CAN use minecraft classic server protocol colour codes
+# use %t to indicate time left to reboot
+warning-message: "&cServeur Redemarre Dans %t minute(s)!"
+
+# what to tell players when server reboots
+# CAN use minecraft classic server protocol colour codes
+restart-message: "&cServeur Redemarre!"

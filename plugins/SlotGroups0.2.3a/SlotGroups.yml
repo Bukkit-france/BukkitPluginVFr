@@ -1,0 +1,31 @@
+# 
+# SlotGroups config file.
+# v0.2.3a
+# 
+settings:
+
+  defaultgroup: Default
+
+slots:
+#All default/new users.  Lowest priority and least likely to be able to join.
+  - name: Default
+    size: 12
+    message: "This server has no available slots!"
+    children: []
+    permission: default
+    
+#Moderators.  Slots are equal to the number of moderators, but inheritance is
+#  enabled anyways.
+  - name: Moderators
+    size: 1
+    message: "No moderator slots available.  Please contact an admin to remedy this."
+    children: ['default']
+    permission: moderators
+    
+#Admins.  Slots are greater than the number of admins, but inheritance is 
+#  enabled anyways.
+  - name: Admins
+    size: 2
+    message: "This server is well and truly full somehow."
+    children: ['Moderators']
+    permission: admins

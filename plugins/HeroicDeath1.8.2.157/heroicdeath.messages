@@ -1,0 +1,50 @@
+#This file contains custom messages for death events.
+#You can specify as many messages as you want (within reason) for each death type.
+#Just be sure each message is on a new line under the appropriate label.
+#When a player dies, a random message from the appropriate label is chosen.
+#Accepted variables:
+# - %d holds the name of the dead player.
+# - %a holds the name of the attacking entity (player or monster) for PVP and Monster deaths.
+# - %i holds the name of the attacking player's current item for PVP deaths.
+#Custom item names may be defined in the 'heroicdeath.items' file.
+:Drown
+%d noyer.
+%d dors avec les poissons.
+%d a manque d'air.
+:Cactus
+%d mort sur un cactus.
+%d a pique un castus, mais le cactus l'a piquer en retour.
+:Fire
+%d bruler a mort.
+%d est bien cuit.
+:Explosion
+%d est en plein de petit morceau.
+%d vien d'exploser.
+:Creeper
+%d a fais une rencontre avec creeper.
+%d n'avais pas vue le creeper.
+:Fall
+%d est tomber raid mort!
+%d a decouvert la gravite.
+:PVP
+%a a tues %d avec %i
+:Void
+%d est tomber dans la fosse.
+:Monsters
+%d a ete tuer par un(e) %a en colere.
+:Lava
+%d a ete tue par la lave.
+%d est devenu de l'obsidian.
+%d a pris un bain dans un lac de feu.
+:Other
+%d est mort de causes inconnues.
+%d a ete tuer par dieu.
+:Suffocation
+%d etouffe.
+:Dispenser
+%d n'a pas besion d'un distributeur la-bas.
+%d a ete abattu par un distributeur.
+:Lightning
+%d c'est electrocuteé
+%d a ete survolter..
+%d a ete foudroyer par dieu.

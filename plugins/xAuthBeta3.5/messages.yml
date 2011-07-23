@@ -1,0 +1,87 @@
+join:
+    register: '{RED}Vous n etes pas inscrit.{NEWLINE}{RED}S il vous plait vous inscrire en utilisant /register <mot_de_passe>.'
+    login: '{RED}S il vous plait vous connecter en utilisant  /login <mot_de_passe> .'
+    error:
+        banned: 'Vous avez ete interdits pour avoir depasse le seuil de mot passe incorrect.'
+        online: 'Vous etes deja en ligne!'
+        name: 'Votre nom contient un ou plusieurs caracteres illegaux.'
+
+register:
+    usage: '{RED}Utilisation correcte: /register <mot_de_passe>  [email]'
+    success: '{BRIGHTGREEN}Vous avez enregistre avec succes!'
+    error:
+        disabled: '{RED}Les inscriptions sont actuellement desactive!'
+        registered: '{RED}Vous etes deja inscrit!'
+        multiple: '{RED}Vous pouvez enregistrer qu un seul compte!'
+        password: '{RED}Votre mot de passe doit avoir au moins {PWMINLENGTH} caracteres!'
+        email: '{RED}S il vous plait utilisez une adresse email valide lors de votre inscription!'
+
+login:
+    usage: '{RED}Utilisation correcte:  /login <mot_de_passe>'
+    success: '{BRIGHTGREEN}Vous etes maintenant connecte! '
+    error:
+        registered: '{RED}Vous n etes pas inscrit!'
+        logged: '{RED}Vous etes deja connecte!'
+        password: '{RED}Mot de passe incorrect!' 
+        activate: '{RED}Votre compte n est pas active!'
+
+logout:
+    success: '{BRIGHTGREEN}Vous avez ete deconnecte!'
+    error:
+        logged: '{RED}Vous n etes pas connecte!'
+
+changepw:
+    usage: '{RED}Utilisation correcte: /changepw <ancien mot de passe> <nouveau mot de passe de>'
+    succes: '{BRIGHTGREEN}Mot de passe change!'
+    error:
+        disabled: '{RED}Mot de passe sont actuellement desactives!'
+        logged: '{RED}Vous n etes pas connecte!'
+        incorrect: '{RED}Mot de passe incorrect vieux!'
+        invalid: '{RED}Votre nouveau mot de passe doit avoir au moins {PWMINLENGTH} caracteres!'
+
+admin:
+    unknown: 'Inconnu sous commande, essayez /xauth pour plus d informations'
+    permission: 'Vous n avez pas la permission d utiliser cette commande!'
+    register:
+        usage: '{RED}Utilisation correcte:  /xauth  <joueur> <mot_de_passe> [email]'
+        registered: '{RED}Ce joueur est deja enregistre!'
+        success: '{BRIGHTGREEN}Compte cree avec succes pour: {WHITE} {TARGET}'
+    changepw:
+        usage: '{RED}Utilisation correcte: /xauth changepw <joueur> <nouveau mot_de_passe>'
+        registered: '{RED}Ce joueur n est pas enregistre!'
+        success: '{TARGET}''s {BRIGHTGREEN}Le mot_de_passe a ete change!'
+    logout:
+        usage: '{RED}Utilisation correcte: /xauth logout <joueur>'
+        logged: '{TARGET} {RED}N est pas connecte!'
+        success: '{TARGET} {BRIGHTGREEN}a ete deconnecte!'
+    unregister:
+        usage: '{RED}Utilisation correcte: /xauth unregister <joueur>'
+        registered: '{RED}Ce joueur n est pas enregistre!'
+        success:
+            target: '{RED}Vous avez ete desinscrit et deconnecter!'
+            player: '{TARGET} {BRIGHTGREEN}a ete desinscrit!'
+    location:
+        usage: '{RED}Utilisation correcte: /xauth location set|remove'
+        set:
+            success: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Lieu de Teleportation pour ce monde mis a votre emplacement!'
+        remove:
+           no: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Ce monde n a pas un endroit de teleportation!'
+           success: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Emplacement de teleportation pour ce monde a ete supprime!'
+    config:
+        usage: '{RED}Utilisation correcte: /xauth config <setting> [nouvelle valeur]'
+        no: '{YELLOW}{PLUGIN} {RED}Pas de reglage!'
+        desc: 'Configuration: {SETTING}{NEWLINE}Type: {TYPE}{NEWLINE}Valeur: {VALUE}'
+        invalid: '{RED}Type de valeur non valide'
+        success: '{YELLOW}{PLUGIN} {BRIGHTGREEN} Reglage change!'
+    reload:
+         sucess: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Recharge complete!'
+
+misc:
+    illegal: '{GRAY}Vous devez etre connecte pour faire cela.'
+    reloaded: '{RED}Serveur recharge, s il vous plait vous connecter.'
+    kick:
+        timeout: 'Vous avez pris trop de temps a se connecter!'
+        strike: 'Vous avez entre un trop grand nombre de mots de passe invalide!'
+
+# USAGE INTERNE SEULEMENT! NE TOUCHEZ PAS!
+version: 1
