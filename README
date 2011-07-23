@@ -13,9 +13,10 @@ Canal : "#BukkitPluginVFr"
 
 Status des traduction de plugin.
 
-bcVote v.0.7 : Traduit avec accent.
+AuthMe 0.78 : Traduit sans accent.
+BcVote v.0.7 : Traduit avec accent.
 DeathMessagePlugin 2.2 : Traduit avec accent.
-EasyBan 1.0 : Non Traduit
+EasyBan 1.0 : Non Traduit.
 HeroicDeath 1.8.2.157 : Traduit sans accent. A vérifier si supporte UTF-8
 Iconomy 5.0.1 : Traduit avec accent. Tester et fonctionnel.
 iConomyChestShop 2.75 : Traduit sans accent Tester et fonctionnel.
@@ -25,7 +26,7 @@ Lockette 1.3.8 : Traduit avec accent. Tester et fonctionnel.
 MonsterHunt 1.2 : Traduit sans accent.
 SimpleRestart 1.1.0 : Traduit sans accent. A vérifier si supporte UTF-8
 SimpleSave 3.1 : Traduit sans accent.
-SlotGroups 0.2.3a : Non Traduit
+SlotGroups 0.2.3a : Non Traduit.
 Stargate 0.5.5 : Traduit avec accent. Tester et fonctionnel.
 StarterKit.jar (1.2) : Traduit, source http://bukkit.fr/index.php?threads/starterkit-v1-2.42/
 towny 0.73.1DevRev243 : Partiellement Traduit. Traduction en cours par RedAlex.

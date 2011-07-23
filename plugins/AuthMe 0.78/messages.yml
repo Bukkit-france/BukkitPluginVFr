@@ -1,0 +1,31 @@
+Command:
+    UnregisterResponse: '&aEnregistrement effectue avec succes !'
+    LogoutResponse: '&aDeconnection : ok!'
+    RegisterResponse: '&aLe mot de passe suivant a ete associe a ton pseudo : &e%1'
+    LoginResponse: '&aMot de passe accepte. Bienvenue parmis nous.'
+    RegisterExtraInfoCheckFailed: '&cTon %1 ne respecte pas nos regles !'
+    ChangePasswordResponse: '&aMot de passe modifie avec succes !'
+Sessions:
+    Hint: ''
+Kick:
+    NotRegistered: Tu dois etre inscrit pour pouvoir jouer
+    OtherUserLoggedIn: Un joueur est deja entrain de jouer avec ce pseudo
+    DisallowedCharacters: Ton pseudo (%1) est incorrecte, les caracteres speciaux sont interdits !
+Alert:
+    Login: '&cConnecte toi en tapant /login <mot de passe>'
+    Registration: '&cEnregistre ton pseudo en tapant /register <mot de passe>'
+    PluginReloaded: '&cArf... Le serveur a restart ! Il faut te reconnecter...'
+JoinMessage:
+    Command: '&etape /register <mot de passe> pour enregistrer ton pseudo'
+    ForceRegistration: '&dTu dois enregistrer ton pseudo avant de pouvoir commencer
+        a jouer !'
+    FreeRegistration: '&dTu es libre dans ta decision denregistrer ou non ton pseudo.'
+Error:
+    DatasourceError: '&cErreur interne ! Contactez un administrateur du serveur'
+    NotRegistered: '&cErreur: Tu n es pas enregistre !'
+    NotLogged: '&cErreur: Tu n es pas connecte !'
+    WrongPassword: '&cErreur: Mot de passe incorrecte!'
+    PlayerNotRegistered: '&cErreur: Pseudo inconnu !'
+    AlreadyRegistered: '&cErreur: Ce pseudo est deja enregistre !'
+    InvalidPassword: '&cMot de passe incorrecte'
+    AlreadyLoggedIn: '&cErreur: Tu es deja connecte !'
