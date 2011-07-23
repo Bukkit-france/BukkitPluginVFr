@@ -1,84 +1,84 @@
-join:
-    register: '{RED}Vous n etes pas inscrit.{NEWLINE}{RED}S il vous plait vous inscrire en utilisant /register <mot_de_passe>.'
-    login: '{RED}S il vous plait vous connecter en utilisant  /login <mot_de_passe> .'
+﻿join:
+    register: '{RED}Vous n’êtes pas enregistré.{NEWLINE}{RED}Merci de vous enregistrer en utilisant /register <Mot de passe>.'
+    login: '{RED}S''il vous plait vous connecter en utilisant  /login <mot_de_passe> .'
     error:
-        banned: 'Vous avez ete interdits pour avoir depasse le seuil de mot passe incorrect.'
-        online: 'Vous etes deja en ligne!'
-        name: 'Votre nom contient un ou plusieurs caracteres illegaux.'
+        banned: 'Le seuil de mot de passe incorrecte a été dépasser.'
+        online: 'Vous êtes déjà connecté!'
+        name: 'Votre nom contient un ou plusieurs carractères illégaux.'
 
 register:
     usage: '{RED}Utilisation correcte: /register <mot_de_passe>  [email]'
-    success: '{BRIGHTGREEN}Vous avez enregistre avec succes!'
+    success: '{BRIGHTGREEN}Vous avez été enregistré avec succes!'
     error:
-        disabled: '{RED}Les inscriptions sont actuellement desactive!'
-        registered: '{RED}Vous etes deja inscrit!'
-        multiple: '{RED}Vous pouvez enregistrer qu un seul compte!'
-        password: '{RED}Votre mot de passe doit avoir au moins {PWMINLENGTH} caracteres!'
-        email: '{RED}S il vous plait utilisez une adresse email valide lors de votre inscription!'
+        disabled: '{RED}Les inscriptions sont actuellement désactivé!'
+        registered: '{RED}Vous êtes déja enregistré!'
+        multiple: '{RED}Vous pouvez enregistré qu''un seul compte!'
+        password: '{RED}Votre mot de passe doit avoir au moins {PWMINLENGTH} caractères!!'
+        email: '{RED}S''il vous plait utilisez une adresse email valide lors de votre inscription!'
 
 login:
     usage: '{RED}Utilisation correcte:  /login <mot_de_passe>'
-    success: '{BRIGHTGREEN}Vous etes maintenant connecte! '
+    success: '{BRIGHTGREEN}Vous êtes maintenant connecté!'
     error:
-        registered: '{RED}Vous n etes pas inscrit!'
-        logged: '{RED}Vous etes deja connecte!'
+        registered: '{RED}Vous n''êtes pas enregister!'
+        logged: '{RED}Vous êtes déjà connecté!'
         password: '{RED}Mot de passe incorrect!' 
-        activate: '{RED}Votre compte n est pas active!'
+        activate: '{RED}Votre compte n''est pas activé!'
 
 logout:
-    success: '{BRIGHTGREEN}Vous avez ete deconnecte!'
+    success: '{BRIGHTGREEN}Vous avez été déconnecté!'
     error:
-        logged: '{RED}Vous n etes pas connecte!'
+        logged: '{RED}Vous n''êtes pas connecté!'
 
 changepw:
-    usage: '{RED}Utilisation correcte: /changepw <ancien mot de passe> <nouveau mot de passe de>'
-    succes: '{BRIGHTGREEN}Mot de passe change!'
+    usage: '{RED}Utilisation correcte: /changepw <Ancien mot de passe> <Nouveau mot de passe>'
+    success: '{BRIGHTGREEN}Mot de passe changé!'
     error:
-        disabled: '{RED}Mot de passe sont actuellement desactives!'
-        logged: '{RED}Vous n etes pas connecte!'
-        incorrect: '{RED}Mot de passe incorrect vieux!'
-        invalid: '{RED}Votre nouveau mot de passe doit avoir au moins {PWMINLENGTH} caracteres!'
+        disabled: '{RED}Les changements de mot de passes son actuellement désactivés!'
+        logged: '{RED}Vous n''êtes pas connecté!'
+        incorrect: '{RED}Ancien mot de passe incorrecte!'
+        invalid: '{RED}Votre nouveau mot de passe doit avoir au moins {PWMINLENGTH} caractères!'
 
 admin:
-    unknown: 'Inconnu sous commande, essayez /xauth pour plus d informations'
-    permission: 'Vous n avez pas la permission d utiliser cette commande!'
+    unknown: 'Commande non trouver,/xauth pour plus d''infos'
+    permission: 'Vous n''avez pas la permission d''utiliser cette commande.'
     register:
-        usage: '{RED}Utilisation correcte:  /xauth  <joueur> <mot_de_passe> [email]'
-        registered: '{RED}Ce joueur est deja enregistre!'
-        success: '{BRIGHTGREEN}Compte cree avec succes pour: {WHITE} {TARGET}'
+        usage: '{RED}Utilisation correcte:  /xauth  register <Joueur> <Mot_de_passe> [email]'
+        registered: '{RED}Ce joueur est déjà enregistré!'
+        success: '{BRIGHTGREEN}Compte crée avec succès pour: {WHITE}{TARGET}'
     changepw:
-        usage: '{RED}Utilisation correcte: /xauth changepw <joueur> <nouveau mot_de_passe>'
-        registered: '{RED}Ce joueur n est pas enregistre!'
-        success: '{TARGET}''s {BRIGHTGREEN}Le mot_de_passe a ete change!'
+        usage: '{RED}Utilisation correcte: /xauth changepw <Joueur> <Nouveau_mot_de_passe>'
+        registered: '{RED}Ce joueur n''est pas enregistre!'
+        success: '{TARGET}''s {BRIGHTGREEN}Le mot_de_passe a été changé!'
     logout:
-        usage: '{RED}Utilisation correcte: /xauth logout <joueur>'
-        logged: '{TARGET} {RED}N est pas connecte!'
-        success: '{TARGET} {BRIGHTGREEN}a ete deconnecte!'
+        usage: '{RED}Utilisation correcte: /xauth logout <Joueur>'
+        logged: '{TARGET} {RED}n''est pas connecté!'
+        success: '{TARGET} {BRIGHTGREEN}a été déconnecté!'
     unregister:
-        usage: '{RED}Utilisation correcte: /xauth unregister <joueur>'
-        registered: '{RED}Ce joueur n est pas enregistre!'
+        usage: '{RED}Utilisation correcte: /xauth unregister <Joueur>'
+        registered: '{RED}Ce joueur n''est pas enregistré!'
         success:
-            target: '{RED}Vous avez ete desinscrit et deconnecter!'
-            player: '{TARGET} {BRIGHTGREEN}a ete desinscrit!'
+            target: '{RED}Vous avez était déinscrit et déconnecté!'
+            player: '{TARGET} {BRIGHTGREEN}a été désinscrit!'
     location:
         usage: '{RED}Utilisation correcte: /xauth location set|remove'
         set:
             success: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Lieu de Teleportation pour ce monde mis a votre emplacement!'
         remove:
-           no: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Ce monde n a pas un endroit de teleportation!'
-           success: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Emplacement de teleportation pour ce monde a ete supprime!'
+           no: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Ce monde n''as pas d''emplacement de teleportation'
+           success: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Emplacement de téléportation pour ce monde a été supprimé!'
     config:
-        usage: '{RED}Utilisation correcte: /xauth config <setting> [nouvelle valeur]'
-        no: '{YELLOW}{PLUGIN} {RED}Pas de reglage!'
+        usage: '{RED}Utilisation correcte: /xauth config <setting> [nouvelle_valeur]'
+        no: '{YELLOW}{PLUGIN} {RED}Pas de réglage!'
         desc: 'Configuration: {SETTING}{NEWLINE}Type: {TYPE}{NEWLINE}Valeur: {VALUE}'
-        invalid: '{RED}Type de valeur non valide'
-        success: '{YELLOW}{PLUGIN} {BRIGHTGREEN} Reglage change!'
+        invalid: '{RED}Type de "valeur" non valide'
+        success: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Réglage changé!'
     reload:
-         sucess: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Recharge complete!'
+         sucess: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Reload completé!'
 
 misc:
     illegal: '{GRAY}Vous devez etre connecte pour faire cela.'
-    reloaded: '{RED}Serveur recharge, s il vous plait vous connecter.'
+    reloaded: '{RED}Serveur recharge, s''il vous plait vous connecter.'
     kick:
         timeout: 'Vous avez pris trop de temps a se connecter!'
         strike: 'Vous avez entre un trop grand nombre de mots de passe invalide!'

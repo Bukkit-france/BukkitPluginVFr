@@ -122,10 +122,10 @@ admin_panel_1: 'Panneau d''administration'
 admin_panel_2: 'Recharge Towny'
 admin_panel_3: 'Exécutez le code de nouveau jour'
 
-msg_block_claim: 'Claim this town block'
-msg_plot_nfs: 'Take down a plot for sale'
-msg_nfs_abr: '&e''fs'' and ''nfs'' are accepted abreviations for ''forsale'' and ''notforsale''.'
-msg_plot_fs: 'Put this area up for auction.'
+msg_block_claim: 'Claim ce plot de la ville.'
+msg_plot_nfs: 'Retire ce plot des ventes.'
+msg_nfs_abr: '&e''fs'' et ''nfs'' sont des abréviations acceptés pour ''forsale'' et ''notforsale''.'
+msg_plot_fs: 'Ajoute ce plot aux ventes.'
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -133,13 +133,13 @@ msg_plot_fs: 'Put this area up for auction.'
 # +------------------------------------------------------+ #
 ############################################################
 
-for_sale: '[For Sale: %s]'
+for_sale: '[A vendre: %s]'
 
-msg_buy_resident_plot: '&b%s bought %s''s plot for %s!'
-msg_couldnt_pay_taxes: '&b%s couldn''t pay taxes and was kicked from the %s.'
+msg_buy_resident_plot: '&b%s achete %s''s plot pour %s!'
+msg_couldnt_pay_taxes: '&b%s ne pouvaient pas payer les taxes et a été expulsé de la %s.'
 msg_couldnt_pay_plot_taxes: '&b%s couldn''t pay taxes and lost ownership over a plot.'
-msg_payed_town_tax: '&bPayed town tax of '
-msg_payed_plot_cost: '&bPayed %s for %s plots in %s'
+msg_payed_town_tax: '&bTaxes payé sur la ville '
+msg_payed_plot_cost: '&bPayé %s pour %s plots dans %s'
 msg_payed_resident_tax: '&bPayed resident tax of '
 msg_bankrupt_town: ' couldn''t afford to remain a town.'
 msg_bankrupt_nation: ' couldn''t afford to remain a nation.'
