@@ -1,0 +1,25 @@
+messages:
+    water: §4%name% a bu la tasse!(et pas que son contenu)
+    suffocate: La tete de §4%name% à éxplosée dans un bloc de %item%!
+    monster: §4%name% a été tué par un Mob!
+    pvp: §4%name% a été pourfendu par %othername% avec un(e) %item% dans un combat a mort!
+    pigzombie: §4%name% a été pourfendu par un cochon zombie!
+    void: §4%name% est tombé dans le void!
+    poweredcreeper: §4%name% est mort suite à la rencontre d'un super creeper!
+    unknown: §4%name% et mort de façon inéxpliquée!
+    skeleton: §4%name% à été transformé en porc-épic par un squelette!
+    creeper: §4%name% s'est fait réduire en bouillie par un creeper!
+    fire: §4%name% sent bon le barbecue,paix a son âme!
+    ghast: §4%name% s'est pris une boule de feu!
+    lightning: §4%name% a subi la colère de Zeus!
+    slime: §4%name% ne véra plus le flambi de meme oeuil!
+    lava: §4%name% a décidé de prendre un bain de lave!
+    zombie: §4%name% s'est fait faucher son cerveau!
+    wolf: §4%name% n'auras plus a crier au loup!
+    tnt: §4%name% a été souflé par une TNT!
+    fall: §4%name% n'as pas d'ailes,il est donc mort dans sa chute!
+    spider: §4%name% nourrira une famille d'araignées pendant toute la semaine!
+    pvpwolf: §4%name% s'est fait arracher le visage par le loup de %othername%!
+    firetick: §4%name% n'as pas trouvé d'eau à temps et a fini en cendres!
+    cactus: §4%name% à fini par s'empaler sur un cactus!
+    giant: §4%name% a été écrasé comme une mouche par un géant!
