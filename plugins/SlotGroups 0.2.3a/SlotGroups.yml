@@ -1,0 +1,89 @@
+# 
+# SlotGroups config file.
+# v0.2.3a
+# 
+settings:
+# This option is only here to help with a Permissions 3 SQL issue.
+# If you're not running Permissions 3.x in SQL mode, ignore it.
+# 
+# This is the group whose permissions are used if Permissions does not report 
+#   a group for a user.  This seems to happen in some cases with 
+#   Permissions 3.x and SQL databases.
+  defaultgroup: Default
+
+# This is where you define the slot groups.
+# If you do not define any slot groups, the plugin will disable itself.
+# The first one listed will be used as the default group, all users without any 
+#   slot group permissions will be put in this group.
+# The list is checked from the bottom up, and will return the lowest slot on the
+#   list a user has access to.
+# 
+# Syntax:
+# slots:
+#   - name: Default
+#     size: 25
+#     message: 'The server is full.'
+#     children: []
+#     login: true
+#     permission: default
+# 
+# Name is the display name used for the slot group.
+#
+# Size is the number of slots in the group.
+#
+# Message is the kick message used when this group is full.
+#
+# Children is a list of groups that this group inherits from. Inheritence is 
+#   recursive, so don't add children that are already inherited by other children.
+#
+# Login determines if this group can login or not.  True is default and means 
+#   that slot group is allowing logins.  False will deny all users in that group
+#   the ability to login.
+#
+# Override allows this user group to join even if the server is in lockdown mode.
+#   For normal users, this defaults to false.  For users who have access to the 
+#   lockdown commands, this defaults to true.  You probably don't need to change this.
+#
+# Permission is the name of the permission node for this slot group, in the 
+#   format slotgroup.group.<name>
+#   In the examaple above, the permission node would be slotgroup.group.default
+#
+# Below are the values I use on my server.
+
+slots:
+#All default/new users.  Lowest priority and least likely to be able to join.
+  - name: Default
+    size: 10
+    message: "Slot group full! Visit our website for information on becoming a member for higher slot priority!"
+    children: []
+    permission: default
+    
+#Registered members.  Can use default slots if Members slot group is full.
+  - name: Members
+    size: 20
+    message: "This server has no available slots!"
+    children: ['Default']
+    permission: member
+    
+#Reserved slots.  High slot count and can inherit from members or default.
+  - name: Special
+    size: 10
+    message: "I'm sorry, but all available slots are occupied!"
+    children: ['Members']
+    permission: special
+    
+#Moderators.  Slots are equal to the number of moderators, but inheritance is
+#  enabled anyways.
+  - name: Moderators
+    size: 10
+    message: "No moderator slots available.  Please contact an admin to remedy this."
+    children: ['Special']
+    permission: moderator
+    
+#Admins.  Slots are greater than the number of admins, but inheritance is 
+#  enabled anyways.
+  - name: Admins
+    size: 5
+    message: "This server is well and truly full somehow."
+    children: ['Moderators']
+    permission: admin
