@@ -1,0 +1,125 @@
+SkipDays: 0
+Value:
+    ZombiePigman:
+        General: 10
+        Arrow: 4
+        Wolf: 7
+        '283': 20
+    Creeper:
+        General: 10
+        Arrow: 4
+        Wolf: 7
+        '283': 20
+    Spider:
+        General: 10
+        Arrow: 4
+        Wolf: 7
+        '283': 20
+    Player:
+        General: 10
+        Arrow: 4
+        Wolf: 7
+        '283': 20
+    Giant:
+        General: 10
+        Arrow: 4
+        Wolf: 7
+        '283': 20
+    ElectrifiedCreeper:
+        General: 10
+        Arrow: 4
+        Wolf: 7
+        '283': 20
+    TamedWolf:
+        General: 10
+        Arrow: 4
+        Wolf: 7
+        '283': 20
+    WildWolf:
+        General: 10
+        Arrow: 4
+        Wolf: 7
+        '283': 20
+    Zombie:
+        General: 10
+        Arrow: 4
+        Wolf: 7
+        '283': 20
+    Skeleton:
+        General: 10
+        Arrow: 4
+        Wolf: 7
+        '283': 20
+    Slime:
+        General: 10
+        Arrow: 4
+        Wolf: 7
+        '283': 20
+    Ghast:
+        General: 10
+        Arrow: 4
+        Wolf: 7
+        '283': 20
+MinimumPlayers: 2
+EnableSignup: true
+Database:
+    MySQLConn: jdbc:mysql://localhost:3306/minecraft
+    UseMySQL: false
+    MySQLPassword: password
+    MySQLUsername: root
+SkipToIfFailsToStart: -1
+Debug: false
+Rewards:
+    RewardEveryone: false
+    RewardParametersPlace2: 322 5
+    RewardParametersPlace3: 297 15
+    NumberOfWinners: 3
+    RewardParametersPlace1: 322 15
+    EnableRewardEveryonePermission: false
+    RewardParametersEveryone: 264 1-1
+    EnableReward: true
+CountBows: true
+DeathPenalty: 30
+EnabledWorlds: world
+SignUpPeriodTime: 5
+Messages:
+    MessageHuntStatusNotInvolvedLastHunt: Vous avez pas participer a la derniere chasse de ce monde !
+    MessageHuntStatusNotActive: La Chasse est fermee !
+    StartMessage: '&2La Chasse est Ouverte&2 ! Tuer un maximum de monstres !'
+    HighScoreMessage: 'Vous avez un nouveau meilleur Score: <Points> points!'
+    MessageTooLateSignUp: Desole, vous arrivez trop tard pour vous inscrire ! 
+    MessageStartNotEnoughPlayers: Il y a pas assez de chasseurs inscrits, la chasse ne peut avoir lieu !
+    FinishMessageNotEnoughPoints: Le soleil se leve, la chasse est termine ! Malheureusement aucun monstre a etait tue, il y a aucun vainqueur.
+    MessageSignUpPeriod: Aiguisez vos epees, renforcer vos armures et tapez /hunt dans la commande de tchat, car la chasse va bientot commencer !
+    SignupAtHuntMessage: Vous etes inscrit pour la chasse !
+    iConomyCurrencyName: iConomy coin
+    SignupBeforeHuntMessage: Vous etes inscrit pour la prochaine chasse aux monstres.
+    RewardMessage: Felicitation! Vous recevez <Items>
+    MessageHuntStatusCurrentScore: Votre score est de <Points> points !
+    KillMessageArrow: Vous gagnez <MobValue> points ! Vous avez <Points> points au total !
+    DeathMessage: Vous etes mort, votre score baisse de 30 points. Soyez prudent la prochaine fois !
+    NoBowMessage: Arrete de camper, va te battre !
+    MessageHuntStatusLastScore: Votre dernier score est de <Points> points
+    MessageHuntStatusTimeReamining: Vite ! Il vous reste plus que <Timeleft>% de la nuit pour tuer les monstres !
+    FinishMessageNotEnoughPlayers: Le soleil se leve, la chasse est finie ! Malheureusement aucun monstre a etait tue, il y a aucun vainqueur.
+    KillMobSpawnedInsideMessage: Sortez de votre cave !
+    KillMessageWolf: Vous gagnez <MobValue> points car votre loups a mordue <MobName>. Vous avez <Points> points.
+    MessageHuntStatusHuntActive: La Chasse est active sur ce monde !
+    FinishMessageWinners: 'Le soleil se leve, la chasse est termine !
+        Les vainqueurs sont : [NEWLINE] 1er place: <NamesPlace1> (<PointsPlace1>
+        points) [NEWLINE] 2eme place: <NamesPlace2> (<PointsPlace2> points) [NEWLINE]
+        3eme place: <NamesPlace3> (<PointsPlace3> points)'
+    MessageLead: <Player> est en tete avec <Points> points!
+    MessageHuntStatusNoKills: Vous avez tue aucun monstre. Reveillez-vous!
+    KillMessageGeneral: Vous gagnez <MobValue> points pour avoir tuer <MobName>. Vous avez <Points> points au total.
+StartChance: 100
+OnlyCountMobsSpawnedOutside: false
+TellTime: true
+EndTime: 23600
+MinimumPointsPlace2: 20
+EnableHighScores: true
+MinimumPointsPlace3: 20
+StartTime: 13000
+OnlyCountMobsSpawnedOutsideHeightLimit: 0
+MinimumPointsPlace1: 20
+AnnounceLead: true
