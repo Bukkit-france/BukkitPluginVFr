@@ -120,7 +120,7 @@ ta_panel_11: 'Heure: '
 
 admin_panel_1: 'Panneau d''administration'
 admin_panel_2: 'Recharge Towny'
-admin_panel_3: 'Run the new day code'
+admin_panel_3: 'Exécutez le code de nouveau jour'
 
 msg_block_claim: 'Claim this town block'
 msg_plot_nfs: 'Take down a plot for sale'
