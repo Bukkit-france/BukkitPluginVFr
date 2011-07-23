@@ -1,0 +1,127 @@
+maxPrice: -1
+minPrice: -1
+#maxPrice - maximum buy/sell price
+#minPrice - minimum buy/sell price
+
+reverseButtons: false
+sell: true
+distance: 1
+position: 'ANY'
+protection: true 
+ 
+#reverseButtons - If true, people buy with left click and sell with right click.
+#sell - Do you want to let people create/use shops, that buy things from players?
+#distance - Distance between the chest and the sign. (Warning, chests that aren't exactly that far WON'T work as shops)
+#position - Position of the chest, relative to the sign. ANY for anything in radius of 1 block, other: goo.gl/YItRO
+#protection - Do you want to use built-in shop protection?
+ 
+LWCprotection: true
+signLWCprotection: false
+ 
+#LWCprotection - Do you want to protect the chests with LWC?
+#signLWCprotection - Do you want to protection signs with LWC? (Warning, gives LWC message when using shop!)
+ 
+log: true
+logToFile: true
+logFilePath: "plugins/iConomyChestShop/iConomyChestShop.log"
+ 
+#log - Do you want to log transactions and shop creating?
+#logToFile - Do you want to save the log to file? (Warning, this lags a bit - I reccomend turning this off, as server.log will have these informations too.)
+#logFilePath - Path to log file.
+ 
+sneakMode: true
+allowUsedItemsToBeSold: false
+stackUnstackableItems: false
+ 
+#sneakMode - Do you want to let people to shop using left mouse button, and destroy the shop signs when sneaking?
+#allowUsedItemsToBeSold - Do you want to let people sell used tools to the shop? (Warning, the tools will be "fresh" if player sells them. NOT RECCOMENDED)
+#stackUnstackableItems - Do you want to stack all items in chest?
+ 
+useDB: true
+howLongToStoreInformationInDB: 600
+intervalBetweenTransactions: 100
+ 
+#useDB - Do you want to use bukkit's built-in database to log the transactions? (Must be turned on, if you want to generate price list)
+#howLongToStoreInformationInDB - How old the transation must be before being deleted? (In seconds)
+#intervalBetweenTransaction - How often can one person buy or sell to the shop? (In miliseconds: 1000ms = 1 sec)
+ 
+generateTransactionList: false
+intervalBetweenGeneratingTransactionList: 5
+showUnusedItemsInGeneratedList: false
+ 
+#generateTransactionList - Do you want to generate average price, amount of bought, sold items page? (Currently in ALPHA state)
+#intervalBetweenGeneratingTransactionList - Interval between generating the list. (In seconds)
+#showUnusedItemsInGeneratedList - Do you want to show items, that were not bought/sold on the list?
+ 
+separatingLineAfterTransaction: false
+doNotRemoveSignIfNotCorrect: false
+serverAccountName: ""
+#separatingLineAfterTransaction - Do you want to show a line in the chat after transaction?
+#doNotRemoveSignIfNotCorrect - Do you want to keep the sign, if it's not correct?
+#serverAccountName - Account of the server to use with AdminShops, blank if you don't want to use one
+ 
+#Messages:
+showOutOfStock: false
+showMoneyAfterTransaction: false
+
+ 
+#showOutOfStock - Do you want to show "Out of stock" messages?
+#showMoneyAfterTransaction - Do you want to show your balance after transaction?
+ 
+ 
+# If you want to translate this file, do it yourself, or copy the "lang:" part from another translation.
+# Prefix will be dispayed at the beggining of every message.
+# You can use terms like <buyer>, <amount> or <item> in messages, however
+# only certain messagess offer this.
+#
+# <buyer> - nick of the person who bought from shop.
+# <seller> - nick of the person who sold to shop.
+# <owner> - nick of the person who own the shop.
+# <amount> - amount of item
+# <item> - name of item
+# <money> - amount of money with iConomy currency
+# <cost> - cost of the item
+#
+# You can always use hMod colors, like
+# &1, &f etc...
+# For example: This is my&6 golden text.
+ 
+#MAXIMUM OF 55 CHARACTERS WITH PREFIX!
+ 
+#Experimental: Try changing the prefix to '                          &a[Shop] &f                                             '
+#The text will be centered!
+lang: #French
+    prefix: '&a[Shop] &f'
+    Somebody_sold_items_to_your_shop: '<seller> a vendu <amount> <item> pour <cost> a votre echoppe !'
+    Somebody_bought_items_from_your_shop: '<buyer> a achete <amount> <item> pour <cost> !'
+    Your_shop_is_out_of_stock: 'Vous n''avez plus de <item> dans votre echoppe !'
+    You_cannot_use_your_own_shop: "Vous ne pouvez pas utiliser votre propre echoppe !"
+
+    You_bought_items: 'Vous venez d''acheter <amount> <item> a <owner>.'
+
+    Your_inventory_is_full: 'Votre inventaire est rempli !'
+    You_have_got_not_enough_money: "Vous n'avez pas assez de monnaie !"
+    Shop_is_out_of_stock: 'Cette echoppe est vide !'
+
+    You_have_not_enough_items: 'Vous n''avez pas assez d''objets a vendre !'
+    You_sold_items: "Vous avez vendu <amount> <item> a <cost> a l'echoppe de <owner>."
+    Chest_is_full: 'Ce coffre est plein !'
+
+    Seller_has_not_enough_money: "Le vendeur n'a pas assez de monnaie !"
+    Seller_has_no_account: "Le compte du vendeur n''existe pas !"
+    No_selling_to_this_shop: "Le proprietaire du magasin ne veut pas que vous vendiez ici !"
+    No_buying_from_this_shop: "Le proprietaire du magasin ne veut pas que vous achetiez ici !"
+
+    Your_balance: 'Vous avez maintenant <money>.'
+
+    Shop_is_created: 'Votre echoppe a bien ete creer !'
+    Shop_cannot_be_created: "Vous n''avez pas mis de coffre !"
+    Shop_was_LWC_protected: "Votre echoppe a bien ete protege avec LWC."
+
+    Mode_changed_to_sell: 'Mode vente !'
+    Mode_changed_to_buy: 'Mode achat !'
+
+    You_tried_to_steal: "On ne vole pas !"
+
+    iteminfo: "&aID de l''objet et nom:"
+    incorrectID: "ID incorrecte !"
