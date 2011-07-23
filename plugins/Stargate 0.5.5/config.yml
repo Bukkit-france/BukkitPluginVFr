@@ -1,22 +1,22 @@
-useiconomy: true
+﻿useiconomy: true
 maxgates: 0
-createcost: 100
-portal-destroy-message: Gate Detruit
+createcost: 0
+portal-destroy-message: Portail Détruit
 toowner: false
 worldfilter: false
 gate-folder: plugins\Stargate/gates/
-not-owner-message: Access Refuser
+not-owner-message: Accès Refusée
 debug: false
-other-side-blocked-message: Destination Bloquer
+other-side-blocked-message: Déstination Bloquée
 not-enough-money-message: Pas assez d'argent.
 portal-folder: plugins\Stargate/portals
 networkfilter: false
 default-gate-network: central
 destroycost: 0
-not-selected-message: Invalid Destination
+not-selected-message: Destination Invalide
 chargefreedestination: true
 freegatesgreen: false
 usecost: 0
-portal-create-message: Gate Creer
+portal-create-message: Portail Crée
 destroyexplosion: false
-teleport-message: Teleported
+teleport-message: Téléportation
