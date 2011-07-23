@@ -1,4 +1,4 @@
-##
+﻿##
 # Messaging Template
 ##
 # Variables
@@ -40,101 +40,102 @@
 ##
 
 tag:
-    money: "<green>[<white>Money<green>] "
-    bank: "<green>[<white>Bank<green>] "
+    money: "<green>[<white>Monnaie<green>] "
+    bank: "<green>[<white>Banque<green>] "
 
 banks:
-    create: "<green>Created bank <white>+name<green>."
-    remove: "<rose>Deleted bank <white>+name<rose>."
+    create: "<green>Créer une banque <white>+name<green>."
+    remove: "<rose>Supprimer une banque <white>+name<rose>."
     purge:
-      bank: "<rose>Bank <white>+name<rose> was purged of inactive accounts."
-      all: "<rose>All banks were purged of inactive accounts."
-    set: "<green>Changed <white>+key<green> on <white>+bank<green> to <white>+value<green>."
+        bank: "<rose>Banque <white>+name<rose> a été purgé pour comptes inactifs."
+        all: "<rose>Toutes les banques ont été purgés pour comptes inactifs."
+    set: "<green>Changez <white>+key<green> on <white>+bank <green> à <white>+value<green>."
 
 personal:
-    balance: "<green>Balance: <white>+balance"
-    reset: "<rose>Your account has been reset."
-    rank: "<green>Current rank: <white>+rank"
-    set: "<green>Your balance has been changed to <white>+amount"
-    debit: "<rose>Your account had <white>+amount<rose> debited."
-    credit: "<white>+amount<green> was credited into your account."
+    balance: "<green>Solde: <white>+balance"
+    reset: "<rose>Votre compte a été réinitialisé."
+    rank: "<green>Classement actuel: <white>+rank"
+    set: "<green>Votre solde a été modifié pour <white>+amount"
+    debit: "<rose>Votre compte a été débité de : <white>+amount"
+    credit: "<white>+amount<green> a été crédité sur votre compte."
     bank:
-        balance: "<green>+bank Balance: <white>+balance"
-        charge: "<green>You payed <white>+amount<green> for the account."
-        sent: "<green>You sent <white>+amount<green> from <white>+bank<green> to <white>+name<green>."
-        deposit: "<green>You deposited <white>+amount<green> into <white>+bank<green>."
-        withdraw: "<green>You withdrew <white>+amount<green> from <white>+bank<green>."
-        transfer: "<green>Transferred <white>+amount<green> from <white>+bank<green> to <white>+bankAlt<green>."
-        between: "<green>Transferred <white>+amount<green> from <white>+bank<green> to <white>+name<green> at <white>+bankAlt<green>."
-        change: "<green>Changed main bank to <white>+bank<green>."
-        recieved: "<green>Your account with <white>+bank<green> had <white>+amount<green> credited."
+        balance: "<green>Solde de +bank : <white>+balance"
+        charge: "<green>Vous payez <white>+amount<green> Pour le compte."
+        sent: "<green>Vous envoyez <white>+amount<green> à <white>+bank<green> pour <white>+name<green>."
+        deposit: "<green>Vous déposez<white>+amount<green> à <white>+bank<green>."
+        withdraw: "<green>Vous avez retiré <white>+amount<green> de <white>+bank<green>."
+        transfer: "<green>Transféré <white>+amount<green> de <white>+bank<green> à <white>+bankAlt<green>."
+        between: "<green>Transféré <white>+amount<green> de <white>+bank<green> à <white>+name<green> pour <white>+bankAlt<green>."
+        change: "<green>Changemet de banque principale pour <white>+bank<green>."
+        recieved: "<green>Votre compte <white>+bank<green> a été crédité de : <white>+amount"
 
 player:
-    balance: "<green>+name's Balance: <white>+balance"
-    rank: "<green>+name's rank: <white>+rank"
-    reset: "<white>+name's <rose>account has been reset."
-    set: "<green>+name's balance has been changed to <white>+amount"
-    credit: "<white>+name's <green>account had <white>+amount<green> credited."
-    debit: "<white>+name's <rose>account had <white>+amount<rose> debited."
+    balance: "<green>Solde de +name <white>+balance"
+    rank: "<green>Classement de +name <white>+rank"
+    reset: "<rose>Le compte de <white>+name <rose>à été réinitialisé"
+    set: "<green>La solde de <white>+name <green>a été changé de : <white>+amount"
+    credit: "<green>Le compte de <white>+name <green>a été crédité de : <white>+amount."
+    debit: "<rose>Le compte de <white>+name <rose>a été débité de : <white>+amount"
     bank:
-        balance: "<green>+name's Balance with +bank: <white>+balance"
-        recieved: "<white>+name's <green>account had <white>+amount<green> credited."
+        balance: "<green>Solde de +name chez +bank : <white>+balance"
+        recieved: "<green>Le compte de <white>+name<green>a été crédité de : <white>+amount"
 
 payment:
-    self: "<rose>Sorry, you cannot send money to yourself."
-    to: "<green>You have sent <white>+amount<green> to <white>+name<green>."
-    from: "<white>+name<green> has sent you <white>+amount<green>."
+    self: "<rose>Désolé, vous ne pouvez pas envoyer d'argent à vous-même."
+    to: "<green>Vous avez envoyé <white>+amount<green> à <white>+name<green>."
+    from: "<white>+name<green> vous a envoyé <white>+amount<green>."
 
 statistics:
     opening: "<green>-----[ <white>iConomy Stats <green>]-----"
-    total:  "<gray>Total +currency: <white>+amount"
-    average: "<gray>Average +currency: <white>+amount"
-    accounts: "<gray>Total Accounts: <white>+amount"
+    total: "<gray>Total +currency: <white>+amount"
+    average: "<gray>Moyenne +currency: <white>+amount"
+    accounts: "<gray>Total Comptes: <white>+amount"
     bank:
-        accounts: "<gray>Total Bank Accounts: <white>+amount"
+        accounts: "<gray>Total Compte en banque: <white>+amount"
 
 list:
     banks:
-        opening: "<green>Page #<white>+amount<green> of <white>+total<green> pages (<white>F: Fee<green>, <white>I: Initial Holdings<green>)"
-        empty: "<white>   No Banks Exist."
+        opening: "<green>Page #<white>+amount<green> à <white>+total<green> pages (<white>F: Frais<green>, <white>I: détention initiale<green>)"
+        empty: "<white>   Aucune banque n'héxiste."
         all-entry: "<green> +name [F: <white>+fee<green>] [I: <white>+initial<green>] [<white>+major<green>/<white>+minor<green>]"
         fee-major-entry: "<green> +name [F: <white>+fee<green>] [I: <white>+initial<green>] [<white>+major<green>]"
         major-entry: "<green> +name [I: <white>+initial<green>] [<white>+major<green>]"
         entry: "<green> +name [I: <white>+initial<green>] [<white>+major<green>/<white>+minor<green>]"
 
 interest:
-    announcement: "+amount <green>gained from interest."
+    annonce: "+amount <green>acquise dans l'intérêt."
+    announcement: "+amount <green>interest gained."
 
 accounts:
-    empty: "<rose>Deleted <white>all<rose> accounts."
-    purge: "<rose>All inactive accounts were purged."
-    create: "<green>Created account with the name <white>+name<green>."
-    remove: "<green>Deleted account: <white>+name<green>."
-    remove-total: "<green>Fully deleted: <white>+name<green>."
-    status: "<green>Account status is now <white>+status<green>."
+    empty: "<rose>Suppression de <white>tout<rose> les comptes."
+    purge: "<rose>Tous les comptes inactifs ont été purgés."
+    create: "<green>Compte créé avec le nom : <white>+name<green>."
+    remove: "<green>Compte supprimé : <white>+name<green>."
+    remove-total: "<green>Entièrement supprimé : <white>+name<green>."
+    status: "<green>État de compte : <white>+status<green>."
     bank:
-        create: "<green>Created account for <white>+name<green> with <white>+bank<green>."
-        remove: "<green>Deleted account <white>+name<green> from <white>+bank<green>."
+        create: "<green>Compte créer pour <white>+name<green> chez <white>+bank<green>."
+        remove: "<green>Compte supprimé de <white>+name<green> chez <white>+bank<green>."
 
 top:
-    opening: "<green>Top <white>+amount<green> Richest Players:"
-    empty: "<white>   Nobody yet!"
+    opening: "<green>Top <white>+amount<green> des joueurs les plus riches:"
+    empty: "<white>   Personne encore!"
     line: "<white>   +i.<green> +name <white>(<green>+balance<white>)"
 
 error:
-    online: "<rose>Sorry, nobody else is online."
-    exists: "<rose>Account already exists."
-    account: "<rose>Player <white>+name<rose> does not have account."
-    funds: "<rose>Sorry, you do not have enough funds to do that."
+    online: "<rose>Désolé, personne d'autre est en ligne."
+    exists: "<rose>Compte déjà existant."
+    account: "<rose>Le joueur <white>+name<rose> n'a pas de compte."
+    funds: "<rose>Désolé, vous n'avez pas assez de fonds."
     bank:
-        fee: "<rose>Sorry, this banks fee is more than you are holding."
-        exists: "<rose>Sorry, that bank already exists."
-        doesnt: "<rose>Sorry, bank <white>+name <rose>doesn't exist."
-        couldnt: "<rose>Sorry, bank <white>+name <rose>couldn't be created."
+        fee: "<rose>Désolé, vous n'avez pas assez de fonds pour payer les frais de banques"
+        exists: "<rose>Désolé, cette banque existe déjà."
+        doesnt: "<rose>Désolé la banque <white>+name <rose>n'éxiste pas."
+        couldnt: "<rose>Désolé la banque <white>+name <rose>n'a pas pu être crée."
         account:
-            funds: "<rose>Sorry, your account doesn't have the funds."
-            maxed: "<rose>Sorry, you already have a bank account."
-            none: "<rose>Sorry, no accounts found."
-            doesnt: "<rose>Sorry, no account with the name <white>+name<rose> exists."
-            exists: "<rose>Sorry, an account like that already exists with us."
-            failed: "<rose>Sorry, failed to create account. Try again..."
+            funds: "<rose>Désolé, vous n'avez pas les fonds nécéssaire pour payer les frais de banque."
+            maxed: "<rose>Désolé, vous avez déjà un compte bancaire."
+            none: "<rose>Désolé, pas de comptes trouvés."
+            doesnt: "<rose>Désolé, aucun compte nommé <white>+name<rose> existe."
+            exists: "<rose>Désolé, ce compte existe déjà chez nous."
+            failed: "<rose>Désolé, création de compte échoué. Essayez à nouveau ..."
