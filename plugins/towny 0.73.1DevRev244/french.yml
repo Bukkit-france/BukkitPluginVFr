@@ -1,4 +1,4 @@
-﻿?name: Towny
+﻿name: Towny
 version: 0.03
 language: french
 author: ElgarL,RedAlex,Zephiraxx
@@ -53,10 +53,10 @@ town_help_9: 'Bienvenue dans ma ville!'
 
 mayor_help_3: 'Le territoire claim n''est pas attaché à la ville'
 mayor_help_4: 'Claim les territoires autour de vous dans un rayon de X'
-mayor_help_5: 'Claim jusqu'au rayon maximal'
+mayor_help_5: 'Claim jusqu''au rayon maximal'
 mayor_help_6: 'Unclaim ce territoire de la ville'
 mayor_help_7: 'Tentative d''unclaim autour de vous.'
-mayor_help_8: 'Tentative d'unclaim tous les territoires de la ville.'
+mayor_help_8: 'Tentative d''unclaim tous les territoires de la ville.'
 
 nation_help_1: 'Les information de votre nations'
 nation_help_2: '[Nation]'
@@ -75,7 +75,7 @@ res_1: 'Vos information'
 res_2: '[resident]'
 res_3: 'Information du joueur sélectionné'
 res_4: 'Liste de tous les joueurs actifs'
-res_5: 'pour l'aide'
+res_5: 'pour l''aide'
 res_6: 'Correcpondance en ligne'
 res_7: 'Nom exact'
 
@@ -103,9 +103,9 @@ world_help_3: 'État de la ville sélectionné'
 world_help_4: 'Liste de tout les mondes'
 
 townyadmin_help_1: 'Unclaim ce territoire de la ville'
-townyadmin_help_2: 'Tentative d'unclaim autour de vous.'
+townyadmin_help_2: 'Tentative d''unclaim autour de vous.'
 
-ta_panel_1: 'Panneau d'administration Towny'
+ta_panel_1: 'Panneau d''administration Towny'
 ta_panel_2: 'Guerre: '
 ta_panel_3: 'Régénération santé: '
 ta_panel_4: 'Les monstres retirer du monde sont: '
@@ -273,8 +273,8 @@ msg_mayor_abandon: '&bYou would abandon your people? Choose another mayor with '
 msg_new_day_tax: '&Un nouveau jours ces lever! Les taxes ont été collecter'
 msg_new_day: '&bA Un nouveau jours ces lever!'
 msg_new_king: '&b%s est maintenant le roi de %s!'
-msg_err_new_king_notmayor: '&cLe nouveau roi n'est pas un maire.'
-msg_err_king_not_in_nation: '&cNouveau roi n'appartenir pas à cette nation.'
+msg_err_new_king_notmayor: '&cLe nouveau roi n''est pas un maire.'
+msg_err_king_not_in_nation: '&cNouveau roi n''appartenir pas à cette nation.'
 msg_err_fight_like_king: '&cLa neutralité n''est pas une option! Combat comme un roi!'
 msg_no_access_nation_bank: '&cVous n''avez pas accès à la banque de la nation.'
 msg_err_no_money: '&cThere is not enough money in the bank.'
@@ -312,9 +312,9 @@ msg_err_not_attached_edge: '&cle terrain selectionner nes pas attacher a la fron
 msg_err_not_enough_blocks: '&cNot enough available town blocks to claim this selection.'
 msg_err_cant_afford_blocks: '&cTown cannot afford to claim %s town blocks costing %s'
 msg_err_not_in_town_claim: '&cYou must belong to a town in order to claim plots.'
-msg_err_must_belong_town: '&cvous dever appartenir a une ville.'
-msg_err_dont_belong_town: '&cvous nappartennez a aucune ville.'
-msg_err_dont_belong_nation: '&bvous nappartennez a aucune nation.'
+msg_err_must_belong_town: '&cVous dever appartenir a une ville.'
+msg_err_dont_belong_town: '&cVous n''appartennez a aucune ville.'
+msg_err_dont_belong_nation: '&bVous n''appartennez a aucune nation.'
 msg_err_rect_auto: '&cOnly towns can use auto.'
 msg_err_invalid_radius: '&cInvalid radius. Use an integer or ''auto''.'
 msg_err_not_configured: '&cThis world has not been configured by Towny.'
