@@ -1,16 +1,8 @@
 # 
 # SlotGroups config file.
-# v0.2.3a
+# v0.2.4
 # 
-settings:
-# This option is only here to help with a Permissions 3 SQL issue.
-# If you're not running Permissions 3.x in SQL mode, ignore it.
-# 
-# This is the group whose permissions are used if Permissions does not report 
-#   a group for a user.  This seems to happen in some cases with 
-#   Permissions 3.x and SQL databases.
-  defaultgroup: Default
-
+#
 # This is where you define the slot groups.
 # If you do not define any slot groups, the plugin will disable itself.
 # The first one listed will be used as the default group, all users without any 
@@ -24,10 +16,19 @@ settings:
 #     size: 25
 #     message: 'The server is full.'
 #     children: []
-#     login: true
-#     permission: default
-# 
-# Name is the display name used for the slot group.
+#     (login: true)
+#     (override: false)
+#     (permission: rookies)
+#
+# Directives in parenthesis are optional.
+#
+# Name is the display name used for the slot group.  It is also used to determine
+#   the slot group's permission node.  All permissions nodes for SlotGroups are
+#   lower case, regardless of the case here.
+#   A given slot group's permission node will be in the format:
+#   slotgroups.group.<name>
+#   In the example group above, the permission node would be:
+#   slotgroups.group.default
 #
 # Size is the number of slots in the group.
 #
@@ -44,9 +45,15 @@ settings:
 #   For normal users, this defaults to false.  For users who have access to the 
 #   lockdown commands, this defaults to true.  You probably don't need to change this.
 #
-# Permission is the name of the permission node for this slot group, in the 
-#   format slotgroup.group.<name>
-#   In the examaple above, the permission node would be slotgroup.group.default
+# Permission is an optional directive that directly determines the name of the 
+#   permission node for this slot group.  This is only necessary for advanced
+#   setups.  This will always override the node created by the Name directive.
+#   All permissions nodes for SlotGroups are always lower case, regardless of the
+#   case here.
+#   Nodes are in the format:
+#   slotgroup.groups.<name>
+#   In the examaple above, the permission node would be:
+#   slotgroup.group.rookies
 #
 # Below are the values I use on my server.
 
@@ -56,34 +63,31 @@ slots:
     size: 10
     message: "Slot group full! Visit our website for information on becoming a member for higher slot priority!"
     children: []
-    permission: default
     
 #Registered members.  Can use default slots if Members slot group is full.
   - name: Members
     size: 20
     message: "This server has no available slots!"
     children: ['Default']
-    permission: member
-    
+   
 #Reserved slots.  High slot count and can inherit from members or default.
   - name: Special
     size: 10
     message: "I'm sorry, but all available slots are occupied!"
     children: ['Members']
-    permission: special
-    
+   
 #Moderators.  Slots are equal to the number of moderators, but inheritance is
 #  enabled anyways.
   - name: Moderators
     size: 10
     message: "No moderator slots available.  Please contact an admin to remedy this."
+    override: true
     children: ['Special']
-    permission: moderator
-    
+ 
 #Admins.  Slots are greater than the number of admins, but inheritance is 
 #  enabled anyways.
   - name: Admins
     size: 5
     message: "This server is well and truly full somehow."
+    override: true
     children: ['Moderators']
-    permission: admin
