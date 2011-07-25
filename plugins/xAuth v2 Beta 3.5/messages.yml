@@ -78,10 +78,10 @@ admin:
 
 misc:
     illegal: '{GRAY}Vous devez être connecte pour faire cela.'
-    reloaded: '{RED}Serveur recharge, s''il vous plait vous connecter en utilisant  /login <mot_de_passe> .'
+    reloaded: '{RED}Serveur rechargé, s''il vous plait vous connecter en utilisant  /login <mot_de_passe> .'
     kick:
-        timeout: 'Vous avez pris trop de temps a se connecter!'
-        strike: 'Vous avez entre un trop grand nombre de mots de passe invalide!'
+        timeout: 'Vous avez pris trop de temps pour vous connecter!'
+        strike: 'Vous avez entré un trop grand nombre de mots de passe invalide!'
 
 # USAGE INTERNE SEULEMENT! NE TOUCHEZ PAS!
 version: 1
