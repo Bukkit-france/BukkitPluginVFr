@@ -4,14 +4,14 @@
     error:
         banned: 'Le seuil de mot de passe incorrecte a été dépasser.'
         online: 'Vous êtes déjà connecté!'
-        name: 'Votre nom contient un ou plusieurs carractères illégaux.'
+        name: 'Votre nom contient un ou plusieurs caractères illégaux.'
 
 register:
     usage: '{RED}Utilisation correcte: /register <mot_de_passe>  [email]'
-    success: '{BRIGHTGREEN}Vous avez été enregistré avec succes!'
+    success: '{BRIGHTGREEN}Vous avez été enregistré avec succès!'
     error:
         disabled: '{RED}Les inscriptions sont actuellement désactivé!'
-        registered: '{RED}Vous êtes déja enregistré!'
+        registered: '{RED}Vous êtes déjà enregistré!'
         multiple: '{RED}Vous pouvez enregistré qu''un seul compte!'
         password: '{RED}Votre mot de passe doit avoir au moins {PWMINLENGTH} caractères!!'
         email: '{RED}S''il vous plait utilisez une adresse email valide lors de votre inscription!'
@@ -20,7 +20,7 @@ login:
     usage: '{RED}Utilisation correcte:  /login <mot_de_passe>'
     success: '{BRIGHTGREEN}Vous êtes maintenant connecté!'
     error:
-        registered: '{RED}Vous n''êtes pas enregister!'
+        registered: '{RED}Vous n''êtes pas enregistrer!'
         logged: '{RED}Vous êtes déjà connecté!'
         password: '{RED}Mot de passe incorrect!' 
         activate: '{RED}Votre compte n''est pas activé!'
@@ -58,14 +58,14 @@ admin:
         usage: '{RED}Utilisation correcte: /xauth unregister <Joueur>'
         registered: '{RED}Ce joueur n''est pas enregistré!'
         success:
-            target: '{RED}Vous avez était déinscrit et déconnecté!'
+            target: '{RED}Vous avez était désinscrit et déconnecté!'
             player: '{TARGET} {BRIGHTGREEN}a été désinscrit!'
     location:
         usage: '{RED}Utilisation correcte: /xauth location set|remove'
         set:
-            success: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Lieu de Teleportation pour ce monde mis a votre emplacement!'
+            success: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Lieu de téléportation pour ce monde mis a votre emplacement!'
         remove:
-           no: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Ce monde n''as pas d''emplacement de teleportation'
+           no: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Ce monde n''as pas d''emplacement de téléportation'
            success: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Emplacement de téléportation pour ce monde a été supprimé!'
     config:
         usage: '{RED}Utilisation correcte: /xauth config <setting> [nouvelle_valeur]'
@@ -74,11 +74,11 @@ admin:
         invalid: '{RED}Type de "valeur" non valide'
         success: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Réglage changé!'
     reload:
-         sucess: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Reload completé!'
+         sucess: '{YELLOW}{PLUGIN} {BRIGHTGREEN}Reload complété!'
 
 misc:
-    illegal: '{GRAY}Vous devez etre connecte pour faire cela.'
-    reloaded: '{RED}Serveur recharge, s''il vous plait vous connecter.'
+    illegal: '{GRAY}Vous devez être connecte pour faire cela.'
+    reloaded: '{RED}Serveur recharge, s''il vous plait vous connecter en utilisant  /login <mot_de_passe> .'
     kick:
         timeout: 'Vous avez pris trop de temps a se connecter!'
         strike: 'Vous avez entre un trop grand nombre de mots de passe invalide!'
