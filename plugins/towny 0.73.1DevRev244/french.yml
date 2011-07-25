@@ -123,9 +123,9 @@ admin_panel_2: 'Recharge Towny'
 admin_panel_3: 'Exécutez le code de nouveau jour'
 
 msg_block_claim: 'Claim ce plot de la ville.'
-msg_plot_nfs: 'Retire ce plot des ventes.'
+msg_plot_nfs: 'Retire ce plot des ventes'
 msg_nfs_abr: '&e''fs'' et ''nfs'' sont des abréviations acceptés pour ''forsale'' et ''notforsale''.'
-msg_plot_fs: 'Ajoute ce plot aux ventes.'
+msg_plot_fs: 'Met ce plot en vente.'
 
 ############################################################
 # +------------------------------------------------------+ #
